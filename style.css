@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+main{
+    height: 100vh;
+}
+#topNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:15%;
+    font-size: 2rem;
+    padding: 1%;    
+    background-color:#A59D84;
+    box-shadow: 5px 20px 20px 10px rgba(0, 0, 0, .5);
+}
+.mainDiv{
+    background-color: #D7D3BF;
+    padding: 1%;
+    height: 85%;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+}
+.Notepad{
+    background-color: #C1BAA1;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 1rem; 
+    gap: 10px; 
+    width: 30%;
+    height: 100%;
+}
+textarea{
+    padding: 2%;
+    border-radius: 5px;
+    background-color: #ECEBDE;
+}
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #000000;
+}
+textarea::placeholder {
+   color: #ECEBDE;
+}
+.title{
+    height: 10%;
+    width: 100%;
+}
+.description{
+    height: 50%;
+    width: 100%;
+}
+
+#btnAdd{
+    cursor: pointer;
+    padding: 3%;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#btnAdd:hover{
+    background-color: hsl(0, 5%, 19%);
+}
+
+#container{
+    display: flex; 
+    background-color: #C1BAA1;
+    width: 70%;
+    height: 100%;
+    padding: 1%;
+    overflow:auto;   
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#container::-webkit-scrollbar {
+    width: 10px; 
+}
+  
+#container::-webkit-scrollbar-track {
+    background:#C1BAA1; 
+}
+
+#container::-webkit-scrollbar-thumb {
+    background: #A59D84; 
+    border-radius: 5px; 
+}
+.notes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 260px;
+    height: 300px;
+    margin: 5px;
+    padding: 1%;
+    padding-bottom: 2%;
+    background-color: #ECEBDE;
+    border-radius: 5px;
+}
+
+.notesContent{
+    height: 90%;
+    width: 100%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    overflow-y: auto;
+}
+
+.notesContent::-webkit-scrollbar {
+    width: 5px; 
+}
+  
+.notesContent::-webkit-scrollbar-track {
+    background:#ECEBDE; 
+}
+
+.notesContent::-webkit-scrollbar-thumb {
+    background: #C1BAA1; 
+    border-radius: 5px; 
+}
+
+
+.button{
+    gap: 5%;
+    height: 10%;
+    padding-top: 2%;
+}
+.notesButton{
+    background-color: black;  
+    color:#ECEBDE; 
+    cursor:pointer; 
+    padding: 3%;
+    border-radius: 5px;
+}
+.notesButton:hover{
+    background-color: hsl(0, 5%, 19%);
+}
+
+.editForm{
+    background-color: #A59D84;
+    box-shadow: 4px 4px 8px  rgba(0, 0, 0, 0.5);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 1rem; 
+    gap: 10px; 
+    width: 50%;
+    height: 70%;
+}
+.editTitle{
+    height: 30%;
+    width: 100%;
+}
+.editData{
+    height: 100%;
+    width: 100%;
+}
+#editFormButton{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+}
+.editFormButton{
+    background-color: black;
+    color: #ECEBDE;
+    padding: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.editFormButton:hover{
+    background-color: hsl(0, 5%, 19%);
+}
